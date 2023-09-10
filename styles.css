@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,300;0,400;1,300;1,400;1,500&family=Outfit&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Work+Sans:wght@300&display=swap");
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1550px;
+    margin: 0 auto;
+}
+
+header {
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 800px;
+    display: flex;
+    position: relative;
+}
+
+header .bg-black {
+    background-color: #000;
+    width: 450px;
+    height: 100%;
+}
+
+header .img {
+    /* border: 3px solid green; */
+    width: 540px;
+}
+
+header .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+header .content {
+    position: absolute;
+    width: 1110px;
+    /* border: 1px solid rgb(199, 173, 24); */
+    display: flex;
+    justify-content: space-between;
+    margin: 140px;
+    padding: 0 9px;
+}
+
+header .content div {
+    position: relative;
+}
+
+header .content div p {
+    width: 300px;
+    font-size: 19px;
+    font-family: "Outfit";
+    color: #444444;
+    margin-top: 13px;
+    /* border: 1px solid; */
+    height: 160px;
+    line-height: 1.5;
+}
+
+header .content h1 {
+    color: white;
+    font-family: "Outfit";
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 73px;
+    mix-blend-mode: difference;
+}
+
+.link {
+    text-decoration: none;
+    color: #fff;
+    background-color: #151515;
+    display: block;
+    width: 204px;
+    height: 72px;
+    padding: 20px;
+    font-size: 22px;
+    text-transform: uppercase;
+    font-family: "Outfit";
+    transition: 0.2s ease;
+    position: relative;
+}
+
+header .content div a::after {
+    content: ">";
+    position: absolute;
+    top: 0;
+    left: 204px;
+    text-align: center;
+    padding-top: 22px;
+    display: block;
+    width: 56px;
+    height: 72px;
+    background-color: #d5966c;
+}
+
+.map a {
+    margin-left: 150px;
+}
+
+.map a::before {
+    content: "<";
+    position: absolute;
+    top: 0;
+    left: -56px;
+    text-align: center;
+    padding-top: 22px;
+    display: block;
+    width: 56px;
+    height: 72px;
+    background-color: #d5966c;
+}
+
+.link:hover {
+    background-color: #d5966c;
+}
+
+header .content div a:hover::after {
+    background-color: #151515;
+}
+
+.map a:hover::before {
+    background-color: #151515;
+}
+
+main {
+    max-width: 1110px;
+    margin: 140px;
+    display: grid;
+    grid-template: 400px 300px 360px / repeat(12, 1fr);
+    gap: 30px;
+}
+
+main .first {
+    grid-area: 1 / 1 / 1 / span 5;
+    width: 350px;
+    font-family: "Outfit";
+    align-self: center;
+}
+
+main .first h1 {
+    font-size: 48px;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+main .first p {
+    font-size: 18px;
+    margin-top: 20px;
+    word-spacing: 6px;
+}
+
+main .sec {
+    grid-area: 1 / 6 / 1 / span 7;
+    background-image: url("./images/grid-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main .third {
+    grid-area: 2 / 1 / span 2 / span 7;
+    background-image: url("./images/grid-2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main .four {
+    grid-area: 2 / 8 / 2 / span 5;
+    background-image: url("./images/grid-3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main .five {
+    grid-area: 3 / 8 / 3 / span 5;
+    background-color: #151515;
+    color: white;
+    font-family: "Outfit";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .five div {
+    width: 300px;
+}
+
+main .five h1 {
+    text-transform: uppercase;
+    font-size: 48px;
+    line-height: 1;
+    margin-bottom: 20px;
+}
+
+main .first div p {
+    font-size: 18px;
+    word-spacing: 5px;
+}
+
+footer {
+    background-color: #151515;
+    font-family: "Outfit";
+}
+
+footer .inner-section {
+    max-width: 1110px;
+    color: white;
+    margin: 0 140px;
+    padding: 60px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .inner-section h1 {
+    text-transform: uppercase;
+    font-size: 40px;
+    line-height: 1;
+}
+
+footer .inner-section p {
+    max-width: 450px;
+}
+
+footer .inner-section .social-links i {
+    cursor: pointer;
+    margin-right: 10px;
+    transition: 0.2s ease;
+}
+
+footer .inner-section .social-links i:hover {
+    color: #d5966c;
+}
